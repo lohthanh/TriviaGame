@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="description"
+      content="Need a little fun time for the family? Test each other with this simple, yet fun trivia games 
+    and see if you can outsmart each other."
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun-tastic Trivias</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Nav Bar -->
+
+    <nav class="flex">
+      <p id="about">About Page</p>
+      <h1 class="fadeIn">Fun-tastic Trivia</h1>
+      <button id="account" onclick="createAccount()">Create Account</button>
+      <button id="login" onclick="account()">Login</button>
+    </nav>
+    <div id="panel">
+      Hello and welcome! Thank you for stopping by and clicking on the about
+      page. Just a little project I'm doing for my front-end developement class.
+      Please enjoy some nice easy trivia and I hope you share this with someone.
+      Life is better when you're laughing together!
+    </div>
+
+    <!-- Main Body -->
+    <!-- Left Column -->
+
+    <div class="flex container justify-around">
+      <div class="left-col">
+        <h2>Genre Selections</h2>
+        <div class="genre margin-top">
+          <button>
+            <img
+              src="./images/GeneralKnowledgeIcon.jpg"
+              alt="generalKnowledge-icon"
+            />General Knowledge
+          </button>
+          <button>
+            <img
+              src="./images/mythologyIcon.png"
+              alt="mythology-icon"
+            />Mythology
+          </button>
+          <button>
+            <img src="./images/booksIcon.jpg" alt="books-icon" />Entertainment:
+            Books
+          </button>
+        </div>
+        <div class="genre">
+          <button>
+            <img src="./images/movieIcon.png" alt="movies-icon" />Entertainment:
+            Movies
+          </button>
+          <button>
+            <img
+              src="./images/celebritiesIcon.jpg"
+              alt="celebrities-icon"
+            />Celebrities
+          </button>
+          <button>
+            <img src="./images/musicIcon.png" alt="music-icon" />Entertainment:
+            Music
+          </button>
+        </div>
+        <div class="genre">
+          <button>
+            <img
+              src="./images/videoGameIcon.png"
+              alt="videoGame-icon"
+              id="videoGames"
+            />Video Games
+          </button>
+          <button>
+            <img
+              src="./images/animalsIcon.jpg"
+              alt="animal-icon"
+              id="animals"
+            />Animals
+          </button>
+          <button>
+            <img src="./images/sportsIcon.png" alt="sports-icon" />Sports
+          </button>
+        </div>
+      </div>
+
+      <!-- Middle Column -->
+
+      <div class="middle-col">
+        <div class="questions">
+          <h3 class="slide-left">Hello There!</h3>
+          <p class="slide-right">Click an icon to start</p>
+        </div>
+        <div class="answer">
+          <input type="text" id="userInput" name="userInput" placeholder="True or False..." />
+          <button id="btn" onclick="submit()">Submit</button>
+        </div>
+      </div>
+      <!-- Right Column -->
+
+      <div class="right-col">
+        <h3>Leaderboard</h3>
+        <ol>
+          <li>List of top 5 players</li>
+          <li>List of top 5 players</li>
+          <li>List of top 5 players</li>
+          <li>List of top 5 players</li>
+          <li>List of top 5 players</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Bottom Border -->
+
+    <div class="bottom-border"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
