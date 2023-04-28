@@ -9,7 +9,7 @@ let selectedButtonIndex = -1; //start at nothing which is -1, 0 is first index
 const displayQuestion = document.querySelector(".questions");
 const displayAnswer = document.querySelector("#triviaAnswer");
 const answer = document.querySelector(".answer");
-const verify = document.querySelector("#btn");
+const btn = document.querySelector("#btn");
 const score = document.querySelector("#score");
 
 //loop through buttons and contents
@@ -46,7 +46,7 @@ for (let i = 0; i < buttons.length; i++) {
 // }
 
 //displaying correct answer after hitting submit
-verify.onclick = function () {
+btn.onclick = function () {
   displayAnswer.classList.add("fadeIn");
 };
 
